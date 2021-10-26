@@ -78,6 +78,7 @@ nav .content {
 .pets li:hover,
 .accounts li:hover {
   background-color: rgb(137, 173, 231);
+  pointer-events: auto;
 }
 .dropdown button,
 .dropdown2 button,
