@@ -9,43 +9,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-  <div class="wrapper">
-    <nav>
-      <div class="content">
-        <div class="logo"><a href = "#"><img class="logo1" src="images/pawsandfins.png" alt="Paws & Fins"></a></div>
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li>
-              <a href="#" class="desktop-link">Pets</a>
-              <input type="checkbox" id="show-features">
-              <label for="show-features">Features</label>
-              <ul>
-                <li><a href="#">Cats</a></li>
-                <li><a href="#">Dogs</a></li>
-                <li><a href="#">Fish</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
+  <nav>
+    <div class="content">
+    <div class="logo"><a href = "#"><img class="logo_img" src="images/pawsandfins.png" alt="Paws & Fins"></a></div>
+      <!--Nav Links-->
+      <div class="dropdown">
+        <button class="navbtns"><a href="index.html" class="white">Home</a></button>
+        <button class="navbtns"><a href="#" class="white">About</a></button>
+        <div class="pets">
+          <button class="white navbtns">Pets</button>
+          <ul class="navbtns">
+            <li><a href="#">Cats</a></li>
+            <li><a href="#">Dogs</a></li>
+            <li><a href="#">Fish</a></li>
           </ul>
-
-        <!--Search Box-->
-        <form>
-          <div class ="search-box">
-            <input type ="text" class ="txt" placeholder="Search Here...">
-            <a class ="btn"><i class="fa fa-search"></i></a>
-          </div>
-        </form>
-
-        <!--Shopping Cart-->
-        <form action="cart.html" class="shopping-cart">
-          <button type="submit" class="fa fa-shopping-cart">
-        </form>
+        </div>
+        <button class="navbtns"><a href="#" class="white">Contact</a></button>
       </div>
-    </nav>
-  </div>
+      <div class="dropdown2">
+        <div class="accounts">
+          <button class="white navbtns">Account</button>
+          <ul class="navbtns">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Search Box-->
+      <form>
+        <div class ="search-box">
+          <input type ="text" class ="txt" placeholder="Search Here...">
+          <a class ="btn"><i class="fa fa-search"></i></a>
+        </div>
+      </form>
+
+      <!--Shopping Cart-->
+      <form action="cart.html" class="shopping-cart">
+        <button type="submit" class="fa fa-shopping-cart" style=font-size:24px></button>
+      </form>
+    </div>
+  </nav>
   <div class="middle">
-    <h1>...</h1>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
   </div>
 </body>
 </html>
