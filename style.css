@@ -5,7 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-}
+  }
 body {
   background-color: #fff;
   width: 100%;
@@ -20,6 +20,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .content {
   width: 100%;
 }
@@ -114,6 +115,7 @@ nav .content {
 }
 /* Search box start*/
 .search-box {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -160,6 +162,7 @@ nav .content {
   width: 0px;
   font-weight: bold;
 }
+
 ::placeholder {
   color: #fff;
 }
