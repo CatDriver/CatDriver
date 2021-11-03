@@ -1,199 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-* {
+body {
+  font-size: 1.125rem;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
+  font-family: "Yusei Magic", sans-serif;
   box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  }
-body {
-  background-color: #fff;
-  width: 100%;
-}
-nav {
-  background-color: #577fbe;
-  position: relative;
-  display: flex;
-  max-width: 100%;
-  margin: 0% auto;
-  height: 90px;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.content {
-  width: 100%;
+.navbar {
+  background-color: #C8B6A2;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
-nav .content {
-  display: flex;
-  align-items: center;
-}
-.dropdown {
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 4%;
-}
-.dropdown2 {
-  height: 10vh;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  right: 0%;
-  margin-right: 4%;
-}
-.pets ul,
-.accounts ul {
-  position:absolute;
-  background: white;
-  margin-top: 10px;
-  width: 80px;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  list-style: none;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-}
-.pets a,
-.accounts a {
-  color: black;
-  text-decoration: none;
-}
-.pets li,
-.accounts li {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-.pets li:hover,
-.accounts li:hover {
-  background-color: rgb(137, 173, 231);
-  pointer-events: auto;
-}
-.dropdown button,
-.dropdown2 button,
-.navbtns button{
-  background: none;
-  border: none;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 9px 17px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.dropdown button:hover,
-.dropdown2 button:hover {
-  background: #476daa;
-  transition: all 0.3s ease;
-  color: #fff
-}
-.navbtns li {
-  background: #fff;
-  transition: all 0.3s ease;
-}
-.pets button:focus + ul,
-.accounts button:focus + ul {
-  opacity: 1;
-  pointer-events: all;
-  transform:translateY(0px)
-}
-.white {
-  color: white;
-}
-/* Search box start*/
-.search-box {
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background:#476daa;
-  height: 40px;
-  border-radius: 40px;
-  box-sizing: content-box;
+.logo-img {
+  height: 60px;
 }
-.search-box:hover> .txt {
-  width: 300px;
-  padding: 0 6px;
+
+.logo-text {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.8rem;
 }
-.search-box:hover> .btn {
-  background: #476daa;
-}
-.btn {
-  color: #577fbe;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius:  50%;
-  background: #577fbe;
+
+/* === MAIN SECTION === */
+.breadcrumb-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.btn> i {
-  font-size: 30px;
-  color: #fff;
-}
-.txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
+  flex-wrap: wrap;
   padding: 0;
-  color: #fff;
-  font-size: 16px;
-  transition: 0.3s;
-  line-height: 40px;
-  width: 0px;
-  font-weight: bold;
+  margin: 1rem 0 0 0;
+  list-style: none;
+}
+.breadcrumb-list li {
+  font-size: 0.85rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
 }
 
-::placeholder {
-  color: #fff;
+.add-button {
+  background-color: #FF9B64;
 }
-/* Shopping cart start*/
-.shopping-cart{
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  margin-right: 4%;
-  transform: translate(-50%,-50%);
+.add-button:hover {
   color: white;
-  padding: 4px 4px;
-  font-size:24px;
-}
-.fa-shopping-cart{
-color:#fff; 
-background-color: #577fbe;
-border: none;
-cursor: pointer;
-}
-/* Logo start*/
-.logo_img {
-  height: auto;
-  width: auto;
-  max-height: 82px;
-  max-width: 350px;
-  filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(52deg) brightness(104%) contrast(107%);
-  padding-left: 30px;
-}
-.content .logo a {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+  background-color: #154C12;
 }
