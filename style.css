@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+  --blue:#577fbe;
+  --black:#130f40;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);    
+  --border:.2rem solid rgba(0,0,0,.1);
+  --outline:.1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  }
+  outline: none; border:none;
+  text-transform: capitalize;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
 body {
   background-color: #fff;
   width: 100%;
 }
 nav {
-  background-color: #577fbe;
+  background-color: var(--blue);
   position: relative;
   display: flex;
   max-width: 100%;
@@ -20,13 +38,81 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .content {
   width: 100%;
 }
 nav .content {
   display: flex;
   align-items: center;
+}
+.btn1{
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: none;
+}
+.content .icons div{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  margin-right: 8%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  padding: 4px 4px;
+  font-size:24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.content .login-form{
+  position: absolute;
+  top:110%; right:-110%;
+  width:35rem;
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
+}
+.content .login-form ::placeholder{
+  color: var(--black);
+}
+
+.content .login-form.active{
+  right:2rem;
+  transition: .4s linear;
+}
+
+.content .login-form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.content .login-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+
+.content .login-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--light-color);
+}
+
+.content .login-form p a{
+  color:var(--blue);
+  text-decoration: underline;
 }
 .dropdown {
   height: 10vh;
@@ -35,19 +121,7 @@ nav .content {
   align-items: center;
   margin-left: 4%;
 }
-.dropdown2 {
-  height: 10vh;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  right: 0%;
-  margin-right: 4%;
-}
-.pets ul,
-.accounts ul {
+.pets ul {
   position:absolute;
   background: white;
   margin-top: 10px;
@@ -63,26 +137,22 @@ nav .content {
   transform: translateY(-10px);
   transition: all 0.3s ease;
 }
-.pets a,
-.accounts a {
+.pets a {
   color: black;
   text-decoration: none;
 }
-.pets li,
-.accounts li {
+.pets li {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
-.pets li:hover,
-.accounts li:hover {
+.pets li:hover {
   background-color: rgb(137, 173, 231);
   pointer-events: auto;
 }
 .dropdown button,
-.dropdown2 button,
 .navbtns button{
   background: none;
   border: none;
@@ -94,8 +164,7 @@ nav .content {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.dropdown button:hover,
-.dropdown2 button:hover {
+.dropdown button:hover {
   background: #476daa;
   transition: all 0.3s ease;
   color: #fff
@@ -103,9 +172,9 @@ nav .content {
 .navbtns li {
   background: #fff;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
-.pets button:focus + ul,
-.accounts button:focus + ul {
+.pets button:focus + ul {
   opacity: 1;
   pointer-events: all;
   transform:translateY(0px)
@@ -115,7 +184,6 @@ nav .content {
 }
 /* Search box start*/
 .search-box {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -133,12 +201,12 @@ nav .content {
   background: #476daa;
 }
 .btn {
-  color: #577fbe;
+  color: var(--blue);
   float: right;
   width: 40px;
   height: 40px;
   border-radius:  50%;
-  background: #577fbe;
+  background: var(--blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +230,6 @@ nav .content {
   width: 0px;
   font-weight: bold;
 }
-
 ::placeholder {
   color: #fff;
 }
@@ -179,11 +246,11 @@ nav .content {
 }
 .fa-shopping-cart{
 color:#fff; 
-background-color: #577fbe;
+background-color: var(--blue);
 border: none;
 cursor: pointer;
 }
-/* Logo start*/
+/*Logo start*/
 .logo_img {
   height: auto;
   width: auto;
@@ -196,4 +263,110 @@ cursor: pointer;
   color: #fff;
   font-size: 30px;
   font-weight: 600;
+}
+/*Footer Start*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--blue);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+  .content{
+    padding:2rem;
+  }
+}
+@media (max-width:768px){
+  .content .search-form{
+    width:90%;
+  }
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .heading{
+    font-size: 2.5rem;
+  }
 }
