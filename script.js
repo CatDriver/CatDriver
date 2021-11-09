@@ -1,11 +1,9 @@
-$('.carousel').carousel({
-  interval: 6000
-})
+let loginForm = document.querySelector('.login-form');
 
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+}
 
-var counter = 1;
-function addToBasket(){
-  document.getElementById("cart").innerHTML = counter;
-  counter++;   
-  return counter;
+window.onscroll = () =>{
+    loginForm.classList.remove('active');
 }
