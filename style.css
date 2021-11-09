@@ -68,7 +68,6 @@ nav .content {
   cursor: pointer;
   text-align: center;
 }
-
 .content .login-form{
   position: absolute;
   top:110%; right:-110%;
@@ -81,18 +80,15 @@ nav .content {
 .content .login-form ::placeholder{
   color: var(--black);
 }
-
 .content .login-form.active{
   right:2rem;
   transition: .4s linear;
 }
-
 .content .login-form h3{
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
 }
-
 .content .login-form .box{
   width: 100%;
   margin:.7rem 0;
@@ -103,13 +99,11 @@ nav .content {
   color:var(--black);
   text-transform: none;
 }
-
 .content .login-form p{
   font-size: 1.4rem;
   padding:.5rem 0;
   color:var(--light-color);
 }
-
 .content .login-form p a{
   color:var(--blue);
   text-decoration: underline;
