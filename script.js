@@ -7,4 +7,3 @@ document.querySelector('#login-btn').onclick = () =>{
 window.onscroll = () =>{
     loginForm.classList.remove('active');
 }
-
