@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <div class="content">
+            <div class="logo"><a href = "#"><img class="logo1" src="images/pawsandfins.png" alt="Paws & Fins"></a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="shopping-cart"><a href="cart.html"><ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#" class="desktop-link">Pets</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Features</label>
+                    <ul>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Fish</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="image">
+        <img src="https://media.tractorsupply.com/is/image/TractorSupplyCompany/1565194?" alt="product1">
+        <h3>Product 1</h3>
+        <h3>$15.00</h3>
+        <a class="add-cart cart1" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+        <img src="https://media.tractorsupply.com/is/image/TractorSupplyCompany/1565194?" alt="product2">
+        <h3>Product 2</h3>
+        <h3>$25.00</h3>
+        <a class="add-cart cart2" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+        <img src="https://media.tractorsupply.com/is/image/TractorSupplyCompany/1565194?" alt="product3">
+        <h3>Product 3</h3>
+        <h3>$10.00</h3>
+        <a class="add-cart cart3" href="#">Add Cart</a>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

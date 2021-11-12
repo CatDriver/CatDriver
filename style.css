@@ -283,55 +283,115 @@ cursor: pointer;
  p{
    margin: 10px 150px 10px 80px;
  }
+/* Shopping */
 
-/* cart items */
-.cart-page{
-  padding-top: 100px;
-}
-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-.cart-info{
+.container{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  padding-top: 90px;
 }
-th{
-  text-align: left;
-  padding: 5px;
-  color: #fff;
-  background: #476eac;
-  font-weight: normal;
+.image{
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
 }
-td{
-  padding: 10px 5px;
+.add-cart{
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  transition:all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
 }
-td input{
-  width: 40px;
-  height: 30px;
-  padding: 5px;
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3{
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
 }
-td a{
-  color: #476eac;
-  font-size: 12px;
+/* -------------------- CART PAGE ---------------------- */
+.products-container{
+  padding-top: 90px;
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
-td img{
-  width: 80px;
-  height:80px;
+
+.products-container ion-icon {
+  font-size: 25px;
+  color: royalblue;
+  margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
-.total-price{
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid royalblue;
+  margin: 0 auto;
+}
+
+.product-title{
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+  border-bottom: 1px solid royalblue;
+  display: flex;
+  align-items: center;
+}
+
+.quantity{
+  width: 30%;
+  border-bottom: 1px solid royalblue;
+  display: flex;
+  align-items: center;
+}
+
+.total{
+  width: 10%;
+  border-bottom: 1px solid royalblue;
+  display: flex;
+  align-items: center;
+}
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid royalblue;
+}
+.products
+{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+.products img
+{
+  width: 75px;
+}
+.basketTotalContainer{
   display: flex;
   justify-content: flex-end;
-}
-.total-price table{
-  border-top: 3px solid #476eac;
   width: 100%;
-  max-width: 350px;
+  padding: 10px 0;
 }
-td:last-child{
-  text-align: right;
+.basketTotalTitle{
+  width: 30%;
 }
-th:last-child{
-  text-align: right;
+.basketTotal{
+  width: 10%;
 }
