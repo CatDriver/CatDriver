@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Paws & Fins</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
   <nav>
@@ -19,23 +19,28 @@
         <div class="pets">
           <button class="white navbtns">Pets</button>
           <ul class="navbtns">
-            <li><a href="#">Cats</a></li>
-            <li><a href="#">Dogs</a></li>
-            <li><a href="#">Fish</a></li>
+            <li><a href="Cat Page.html">Cats</a></li>
+            <li><a href="Dog Page.html">Dogs</a></li>
+            <li><a href="Fish Page.html">Fish</a></li>
           </ul>
         </div>
         <button class="navbtns"><a href="#" class="white">Contact</a></button>
       </div>
-      <div class="dropdown2">
-        <div class="accounts">
-          <button class="white navbtns">Account</button>
-          <ul class="navbtns">
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-          </ul>
-        </div>
-      </div>
 
+      <!--Account-->
+      <div class="icons">
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+  <div class="modal">
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="register.html">create now</a></p>
+        <input type="submit" value="login now" class="btn1">
+    </form>
+  </div>
       <!--Search Box-->
       <form>
         <div class ="search-box">
@@ -50,9 +55,40 @@
       </form>
     </div>
   </nav>
-  <div class="middle">
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </div>
+  
+   
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>
